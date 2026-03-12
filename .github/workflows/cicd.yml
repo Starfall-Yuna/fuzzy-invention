@@ -63,6 +63,9 @@ jobs:
       id-token: write
     # GitHub Pages 배포 권한 설정
 
+    environment:
+      name: github-pages
+
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
